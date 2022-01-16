@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Nunito:ital,wght@1,300&family=Oswald&family=Roboto+Condensed&family=Roboto+Slab:wght@300&display=swap');
+
+*,*::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
+    background-color: aliceblue;
+}
+
+/*container*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 32px;
+
+}
+.brand {
+    
+    float:left;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+
+}
+.navbar1{
+    float: right;
+    padding-top: 25px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    color: white;
+    
+
+}
+.brand, .navbar1{
+    display: flex;
+    
+}
+.navbar1 a{
+    margin-left: 22px;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    
+}
+button{
+    padding: 10px 12px;
+    margin: 0 10px;
+    text-transform: capitalize;
+    background-color: chocolate;
+    border: none;
+}
+
+.con1{
+    background: linear-gradient(to right, rgba(76, 240, 54, 0.65), rgba(24, 182, 169, 0.65)), url(back.png) ;
+
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.width-full{
+    width: 100%;
+}
+
+.flex-48{
+    flex: 0 1 48%;
+   margin: 10px;
+   align-items: center;
+}
+.flex-30{
+   flex: 0 1 30%;
+}
+
+.col1{
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 30px ;
+
+}
+.col1-1{
+    width: 49%;
+  
+   padding: 20px ;
+   margin: 10px;
+    vertical-align: top;
+}
+.col1-1 h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+.col1-1 span{
+    color: crimson;
+}
+.col1-1 p{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+.col1-1 img{
+    width: 400px;
+    height: 300px;
+    border-radius: 50px 0 50px 0;
+    margin-left: 50px;
+}
+.btn1{
+    padding: 10px 12px;
+    margin: 20px 0px;
+    text-transform: capitalize;
+    background-color: chocolate;
+    border: none;
+    display: inline-block;
+}
+
+/*event*/
+.event{
+    padding: 50px 0;
+    background-color: aliceblue;
+}
+.event h1{
+    font-size: 36px;
+    color: yellowgreen;
+    margin-bottom:5px ;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.event p{
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+
+/*join*/
+.join{
+    background-color: rgb(210, 231, 250);
+    padding: 50px 0;
+}
+.join h1{
+    font-size: 36px;
+    color: black;
+    margin-bottom:20px ;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.join h3{
+    font-size: 24px;
+    color: black;
+    margin-bottom:10px ;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+   
+}
+.join h4{
+    margin-top: -30px ;
+    margin-left: 10px;
+    z-index: 8;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px;
+    color: red;
+   
+}
+.flex-30{
+    border: 2px dashed red;
+    padding: 5px;
+    z-index: 7;
+}
+
+/*schedule*/
+.sch-time{
+    display: flex;
+  
+}
+.timeline ul li::before{
+    content: '';
+     position: absolute;
+     width: 3px;
+     height: 40px;
+     background-color: crimson;
+     
+    margin-left: 10px;
+     margin-top: 70px;
+     z-index: 1;
+}
+
+
+.timeline ul li a::before{
+    content: '';
+     position: absolute;
+     width: 90px;
+     height: 90px;
+     background-color: white;
+     border: 2px dotted red;
+     border-radius: 50%;
+     z-index: -1;
+     margin-left: -30px;
+     margin-top: -20px;
+}
+.timeline ul li{
+    padding: 40px 0px;
+    padding-right: 50px;
+    
+    list-style: none;
+    
+
+}
+.timeline a{
+    text-decoration: none;
+    color: crimson;
+    font-weight: bold;
+}
+
+
+/*
+.schedule-subject{
+    width: 70%;
+}*/
+
+.schedule{
+    padding: 50px 0;
+   
+}
+.schedule h1{
+    font-size: 36px;
+    color: black;
+    margin-bottom:20px ;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.schedule h2{
+    font-size: 24px;
+    color: black;
+    margin-bottom:10px ;
+    text-transform: capitalize;
+    
+    font-weight: bold;
+}
+.schedule-1{
+    padding: 10px 0;
+    display:flex
+}
+.s-img {
+    width: 20%;
+}
+.s-info{
+    width: 75%;
+}
+.s-img img{
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.btn3{
+    padding: 12px 14px;
+    background-color: crimson;
+    margin-top: 20px;
+    margin-left: 700px;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+}
+/*select options*/
+.select-option{
+    background-color: rgb(210, 231, 250);
+    padding: 50px 0;
+}
+.option{
+    padding: 20px;
+}
+.option img{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(210, 231, 250);
+
+} 
+.option dt{
+    font-size: 40px;
+    padding-top: 10px;
+    text-align: center;
+}
+.option dd{
+    font-size: 24px;
+    padding-top: 5px;
+    text-align: center;
+}
+.option :hover{
+background-color: crimson;    
+}
+.video{margin:10px 0;}
+
+/*article*/
+.news-flex-30{
+    flex: 0 1 30%;
+ }
+
+ .article{
+    background-color: rgb(210, 231, 250);
+    padding: 50px 0;
+}
+.article h1{
+    font-size: 36px;
+    color: black;
+    margin-bottom:20px ;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.article img{
+    width: 300px;
+    height: 150px;
+}
+.article h2{
+    font-size: 22px;
+    color: black;
+    margin-bottom:10px ;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+   
+}
+.article p{
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+.btn4{
+    font-size: 20px;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color: crimson;
+}
+
+/*footeer*/
+.footer{
+    background-color:rgb(57, 57, 184);
+    padding: 30px 0;
+    
+}
+.footer h3{
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.logo{
+    width: 30%;
+    
+}
+.logo img{
+    width: 150px;
+    height: 40px;
+}
+.links{
+    width: 40%;
+    
+}
+.links a{
+    font-size: 18px;
+    color: rgb(160, 156, 156);
+    padding-left: 10px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.follow{
+    width: 20%;
+    
+   
+}
+.follow img{
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+
+.bottom{
+   padding: 10px 0;
+    background-color:rgb(20, 20, 150);
+}
+.bottom p{
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+   color: white;
+}
+
+
+/**/
+@media screen and (max-width: 768px)
+{
+    
+    .col1-1 h1, .schedule h1, .join h1, 
+    .event h1, .article h1{
+        font-size: 22px;
+    }
+    .news-flex-30 h2, .s-info h2{
+        font-size: 20px;
+    }
+    .flex-30 h3{
+        font-size: 18px;
+    }
+    .col1-1 p, .schedule p, .join p, .event p, .article p{
+        font-size: 14px;
+    }
+
+    .navbar1 a{
+        flex:1 1 100% ;
+    margin:16px 10px;
+    }
+   .flex{
+       flex-wrap: wrap;
+       margin-left: 30px;
+   }
+   .flex-48, .flex-30{
+    flex:1 1 100% ;
+    margin:16px 10px;
+}
+    .col1-1{
+        flex:1 1 100% ;
+    margin:16px 10px;
+    }
+    .schedule-1{
+        flex:1 1 100% ;
+        margin:16px 10px;
+    }
+    .s-img{
+        flex:1 1 100% ;
+        margin:16px 10px;
+    }
+    .logo, .links, .follow{
+        flex:1 1 100% ;
+        margin:16px 10px;
+    }
+    .btn1, .btn3, .btn4, .btn2{
+        flex:1 1 100% ;
+        margin:16px 10px;
+    }
+}
